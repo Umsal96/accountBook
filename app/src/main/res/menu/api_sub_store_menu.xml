@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/store_parcel"
+        android:title="분양 (구)임대상가(입찰)"
+        />
+    <item
+        android:id="@+id/store_lease"
+        android:title="임대상가(입찰)"
+        />
+    <item
+        android:id="@+id/store_judge"
+        android:title="임대상가(공모.심사)"
+        />
+    <item
+        android:id="@+id/store_Raffle"
+        android:title="임대상가(추첨)"
+        />
+    <item
+        android:id="@+id/store_all"
+        android:title="전체"
+        />
+</menu>

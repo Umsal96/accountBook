@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp">
+
+    <TextView
+        android:id="@+id/currentMoney2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="4dp"
+        android:text="원"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/currentMoney"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout"
+        app:layout_constraintVertical_bias="0.478" />
+
+    <TextView
+        android:id="@+id/fCategory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="9dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="dPtkd"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/fMoney"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fMoney"
+        android:layout_width="67dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="3dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="flsdfk"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/currentMoney"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="297dp"
+        android:layout_height="28dp"
+        android:layout_gravity="right"
+        android:layout_marginStart="57dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fCategory"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:max="100"
+            android:progress="50"
+            android:progressDrawable="@drawable/progressbar_progressbar1" />
+
+        <TextView
+            android:id="@+id/progressText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="0%"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/currentMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="4dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fMoney"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+    <TextView
+        android:id="@+id/totalMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="4dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

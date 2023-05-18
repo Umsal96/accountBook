@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/land_house"
+        android:title="주택용지"/>
+    <item
+        android:id="@+id/land_store"
+        android:title="상가용지"/>
+    <item
+        android:id="@+id/land_industry"
+        android:title="산업시설용지"/>
+    <item
+        android:id="@+id/land_etc"
+        android:title="기타용지"/>
+    <item
+        android:id="@+id/land_all"
+        android:title="전체"/>
+</menu>

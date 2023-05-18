@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/accountBook"
+        android:enabled="true"
+        android:icon="@drawable/outline_book_24"
+        android:title="가계부"
+        app:showAsAction="always"
+        android:checkable="true"
+        app:itemTextColor="@color/white"
+        android:checkableBehavior="single"
+        />
+    <item
+        android:id="@+id/statistics"
+        android:enabled="true"
+        android:icon="@drawable/outline_bar_chart_24"
+        android:title="통계"
+        app:showAsAction="always"
+        android:checkable="true"
+        app:itemTextColor="@color/white"
+        android:checkableBehavior="single"
+        />
+    <item
+        android:id="@+id/debt"
+        android:enabled="true"
+        android:icon="@drawable/outline_payment_24"
+        android:title="부채"
+        app:showAsAction="always"
+        app:itemTextColor="@color/white"
+        android:checkable="true"
+        android:checkableBehavior="single"
+        />
+    <item
+        android:id="@+id/budget"
+        android:enabled="true"
+        android:icon="@drawable/outline_paid_24"
+        android:title="예산"
+        app:showAsAction="always"
+        app:itemTextColor="@color/white"
+        android:checkable="true"
+        android:checkableBehavior="single"
+        />
+    <item
+        android:id="@+id/list"
+        android:enabled="true"
+        android:icon="@drawable/baseline_view_list_24"
+        android:title="내역"
+        app:showAsAction="always"
+        app:itemTextColor="@color/white"
+        android:checkable="true"
+        android:checkableBehavior="single"
+        />
+
+</menu>

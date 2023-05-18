@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatisticsExpensesFragment">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="78dp"
+        android:layout_height="42dp"
+        android:layout_marginEnd="13dp"
+        android:text="지출"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/calendarMonth"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/calendarMonth"
+        android:layout_width="232dp"
+        android:layout_height="44dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="53dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="24dp"
+        android:background="@android:color/transparent"
+        android:drawableRight="@drawable/baseline_navigate_next_24"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/calendarMonth"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/before"
+        android:layout_width="53dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/baseline_navigate_before_24"
+        android:text=""
+        app:layout_constraintStart_toStartOf="@+id/calendarMonth"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pieChart"
+        android:layout_width="match_parent"
+        android:layout_height="358dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarMonth"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pieChart" />
+
+    <TextView
+        android:id="@+id/emptyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="No data found"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <Button
+            android:id="@+id/getApi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="11dp"
+            android:text="데이터 가져오기"
+            android:textSize="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/mainPopup"
+            app:layout_constraintStart_toEndOf="@+id/endDate"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/startDate"
+            android:layout_width="76dp"
+            android:layout_height="36dp"
+            android:text="시작날"
+            android:textSize="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/endDate"
+            android:layout_width="76dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="4dp"
+            android:text="마지막날"
+            android:textSize="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/startDate"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/mainPopup"
+            android:layout_width="68dp"
+            android:layout_height="34dp"
+            android:layout_marginEnd="9dp"
+            android:text="선택1"
+            android:textSize="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/subPopup"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/subPopup"
+            android:layout_width="72dp"
+            android:layout_height="33dp"
+            android:text="선택2"
+            android:textSize="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/black"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#FFFFFFFF"
+            android:gravity="center"
+            android:text="번호"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#FFFFFFFF"
+            android:gravity="center"
+            android:text="유형"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#FFFFFFFF"
+            android:gravity="center"
+            android:text="제목"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#FFFFFFFF"
+            android:gravity="center"
+            android:text="담당부서"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#FFFFFFFF"
+            android:gravity="center"
+            android:text="게시일"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="#FFFFFFFF"
+            android:gravity="center"
+            android:text="조회수"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/apiRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="219dp"
+        android:layout_weight="1">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/NoData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="No data found"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp">
+
+        <TextView
+            android:id="@+id/firstPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginBottom="12dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintEnd_toStartOf="@+id/currentPage"
+            app:layout_constraintStart_toEndOf="@+id/apiBefore" />
+
+        <TextView
+            android:id="@+id/lastPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="12dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/apiNext"
+            app:layout_constraintStart_toEndOf="@+id/currentPage" />
+
+        <Button
+            android:id="@+id/apiNext"
+            android:layout_width="65dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="5dp"
+            android:drawableRight="@drawable/baseline_navigate_next_24"
+            android:text=""
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/apiBefore"
+            android:layout_width="65dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="5dp"
+            android:drawableLeft="@drawable/baseline_navigate_before_24"
+            android:text=""
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/currentPage"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="13dp"
+            android:text=""
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/lastPage"
+            app:layout_constraintStart_toEndOf="@+id/firstPage"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

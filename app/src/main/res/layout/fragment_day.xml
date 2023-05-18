@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DayFragment">
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="51dp"
+        android:gravity="right"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="10dp"
+        android:text="오늘의 잔액"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="34dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="17dp"
+        android:gravity="right"
+        android:text="원"
+        android:textColor="#9D00FF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView37"
+        app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="34dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="17dp"
+        android:gravity="right"
+        android:text="원"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView44"
+        app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="34dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="right"
+        android:text="원"
+        android:textColor="#FFE600"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView42"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView36" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="34dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="right"
+        android:text="원"
+        android:textColor="#002AFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView40"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView35" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="34dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="right"
+        android:text="원"
+        android:textColor="#20AF54"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView41"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView31" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="51dp"
+        android:gravity="right"
+        android:text="0"
+        android:textColor="#9D00FF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="51dp"
+        android:gravity="right"
+        android:text="0"
+        android:textColor="#FFE600"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="right"
+        android:text="0"
+        android:textColor="#002AFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView31"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="51dp"
+        android:gravity="right"
+        android:text="0"
+        android:textColor="#20AF54"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="34dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="right"
+        android:text="원"
+        android:textColor="#FF0000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView39"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView26"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="51dp"
+        android:gravity="right"
+        android:text="0"
+        android:textColor="#FF0000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="31dp"
+        android:gravity="left"
+        android:text="오늘의 지출"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textView26"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="오늘의 수입"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="10dp"
+        android:text="오늘의 저축"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="10dp"
+        android:text="오늘의 부채"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="10dp"
+        android:text="오늘의 상환"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="342dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="33dp"
+        android:background="#DCD7D7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/todayCalendar"
+            android:layout_width="122dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="65dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView33"
+            app:layout_constraintStart_toEndOf="@+id/textView34"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="36dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="11dp"
+            android:text="오늘"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="35dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="11dp"
+            android:text="일별"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/toInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="318dp"
+        android:layout_marginTop="102dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="124dp"
+        android:clickable="true"
+        android:src="@android:drawable/ic_input_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+    <Button
+        android:id="@+id/before"
+        android:layout_width="53dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="24dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/baseline_navigate_before_24"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="53dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="24dp"
+        android:background="@android:color/transparent"
+        android:drawableRight="@drawable/baseline_navigate_next_24"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/textView30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/wiseSaying"
+        android:layout_width="412dp"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="돈에 관해 자식을 교육 시키는 \n가장 손쉬운 방법은 \n그 부모가 돈이 없는 것이다."
+        android:textSize="10dp"
+        android:background="@drawable/edittext_border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/apiButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="67dp"
+        android:text="주책청약"
+        app:layout_constraintBottom_toTopOf="@+id/wiseSaying"
+        app:layout_constraintEnd_toStartOf="@+id/UapiButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <Button
+        android:id="@+id/UapiButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="97dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="66dp"
+        android:text="유튜브"
+        app:layout_constraintBottom_toTopOf="@+id/wiseSaying"
+        app:layout_constraintEnd_toStartOf="@+id/toInput"
+        app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

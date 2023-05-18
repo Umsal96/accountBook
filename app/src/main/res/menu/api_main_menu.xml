@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/all"
+        android:title="전체"/>
+    <item
+        android:id="@+id/land"
+        android:title="토지"/>
+    <item
+        android:id="@+id/condominium"
+        android:title="분양주택"/>
+    <item
+        android:id="@+id/honeymoon"
+        android:title="신혼희망타운"/>
+    <item
+        android:id="@+id/lease"
+        android:title="임대주택"/>
+    <item
+        android:id="@+id/charter"
+        android:title="매입임대/전세임대"/>
+    <item
+        android:id="@+id/store"
+        android:title="상가"/>
+    <item
+        android:id="@+id/other"
+        android:title="기타"/>
+</menu>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/charter_buy"
+        android:title="매입임대"
+        />
+    <item
+        android:id="@+id/charter_lease"
+        android:title="전세임대"
+        />
+    <item
+        android:id="@+id/charter_own"
+        android:title="집주인임대"
+        />
+    <item
+        android:id="@+id/charter_all"
+        android:title="전체"
+        />
+</menu>

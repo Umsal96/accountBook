@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MonthFragment">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:text="이달의 부채"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView55" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:text="이달의 상환"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:text="이달의 잔액"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="34dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="원"
+        android:textColor="#FF0000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView56"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView58"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="51dp"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="0"
+        android:textColor="#9D00FF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView47" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="51dp"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="0"
+        android:textColor="#FFE600"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView53" />
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="51dp"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView46" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="34dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="원"
+        android:textColor="#FFE600"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView52"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView47" />
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="34dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="원"
+        android:textColor="#20AF54"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView49"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView53" />
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:text="이달의 수입"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView57"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="34dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="17dp"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="원"
+        android:textColor="#9D00FF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView46"
+        app:layout_constraintTop_toBottomOf="@+id/textView49" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="51dp"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="0"
+        android:textColor="#20AF54"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView59" />
+
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="34dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="17dp"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:text="원"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView48"
+        app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+    <TextView
+        android:id="@+id/textView55"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:text="이달의 저축"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+    <TextView
+        android:id="@+id/textView56"
+        android:layout_width="34dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="right"
+        android:text="원"
+        android:textColor="#002AFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView59" />
+
+    <TextView
+        android:id="@+id/textView57"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="31dp"
+        android:gravity="left"
+        android:text="이달의 지출"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textView58"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <TextView
+        android:id="@+id/textView58"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="51dp"
+        android:gravity="right"
+        android:text="0"
+        android:textColor="#FF0000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <TextView
+        android:id="@+id/textView59"
+        android:layout_width="140dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="51dp"
+        android:gravity="right"
+        android:text="0"
+        android:textColor="#002AFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView58" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="342dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="33dp"
+        android:background="#DCD7D7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/monthCalendar"
+            android:layout_width="122dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="65dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="TextView"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView33"
+            app:layout_constraintStart_toEndOf="@+id/textView34"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="36dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="11dp"
+            android:text="오늘"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="35dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="11dp"
+            android:text="월별"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/toInput2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="209dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="104dp"
+        android:src="@android:drawable/ic_input_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView48" />
+
+    <Button
+        android:id="@+id/before"
+        android:layout_width="53dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="24dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/baseline_navigate_before_24"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/textView57"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="53dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="24dp"
+        android:background="@android:color/transparent"
+        android:drawableRight="@drawable/baseline_navigate_next_24"
+        android:text=""
+
+        app:layout_constraintBottom_toTopOf="@+id/textView43"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

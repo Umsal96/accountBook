@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/lease_total"
+        android:title="통합공공임대"
+        />
+    <item
+        android:id="@+id/lease_people"
+        android:title="국민임대"
+        />
+    <item
+        android:id="@+id/lease_public"
+        android:title="공공임대"
+        />
+    <item
+        android:id="@+id/lease_endless"
+        android:title="영구임대"
+        />
+    <item
+        android:id="@+id/lease_happy"
+        android:title="행복주택"
+        />
+    <item
+        android:id="@+id/lease_long"
+        android:title="장기전세"
+        />
+    <item
+        android:id="@+id/lease_new"
+        android:title="신축다세대"
+        />
+    <item
+        android:id="@+id/lease_all"
+        android:title="전체"
+        />
+</menu>

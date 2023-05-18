@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="72dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="45dp"
+        android:text="분류"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="72dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="27dp"
+        android:text="금액"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="225dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="71dp"
+        android:text="저장하기"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMoney" />
+
+    <TextView
+        android:id="@+id/textCategory"
+        android:layout_width="207dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="89dp"
+        android:backgroundTint="#807373"
+        android:ems="10"
+        android:gravity="center"
+        android:hint=""
+        android:inputType="textPersonName"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView16"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="86dp"
+        android:digits="0123456789"
+        android:ems="10"
+        android:hint="금액을 입력해 주세요"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/textCategory" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

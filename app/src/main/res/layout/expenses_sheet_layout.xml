@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/expenses_button1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="식비"
+        app:layout_constraintEnd_toStartOf="@+id/expenses_button2"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/expenses_button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="카페/간식"
+        app:layout_constraintEnd_toStartOf="@+id/expenses_button3"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/expenses_button1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/expenses_button3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="술/유흥"
+        app:layout_constraintEnd_toStartOf="@+id/expenses_button4"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/expenses_button2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/expenses_button4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="생활"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/expenses_button3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/expenses_button5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="쇼핑"
+        app:layout_constraintEnd_toStartOf="@+id/expenses_button6"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expenses_button1" />
+
+    <Button
+        android:id="@+id/expenses_button6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="미용/패션"
+        app:layout_constraintEnd_toStartOf="@+id/expenses_button7"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/expenses_button5"
+        app:layout_constraintTop_toBottomOf="@id/expenses_button2" />
+
+    <Button
+        android:id="@+id/expenses_button7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="주거/통신"
+        app:layout_constraintEnd_toStartOf="@+id/expenses_button8"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/expenses_button6"
+        app:layout_constraintTop_toBottomOf="@id/expenses_button3"
+        app:layout_constraintBottom_toTopOf="@+id/expenses_button11"/>
+
+    <Button
+        android:id="@+id/expenses_button8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="건강"
+        app:layout_constraintBottom_toTopOf="@+id/expenses_button12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/expenses_button7"
+        app:layout_constraintTop_toBottomOf="@+id/expenses_button4" />
+
+    <Button
+        android:id="@+id/expenses_button9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="부모님"
+        app:layout_constraintEnd_toStartOf="@+id/expenses_button10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/expenses_button5" />
+
+    <Button
+        android:id="@+id/expenses_button10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="교육"
+        app:layout_constraintTop_toBottomOf="@+id/expenses_button6"
+        app:layout_constraintEnd_toStartOf="@+id/expenses_button11"
+        app:layout_constraintStart_toEndOf="@+id/expenses_button9"
+        tools:layout_editor_absoluteY="96dp" />
+
+    <Button
+        android:id="@+id/expenses_button11"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="경조사"
+        app:layout_constraintTop_toBottomOf="@+id/expenses_button7"
+        app:layout_constraintEnd_toStartOf="@+id/expenses_button12"
+        app:layout_constraintStart_toEndOf="@+id/expenses_button10"
+        tools:layout_editor_absoluteY="96dp" />
+
+    <Button
+        android:id="@+id/expenses_button12"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="금용"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/expenses_button11"
+        app:layout_constraintTop_toBottomOf="@+id/expenses_button8" />
+
+    <Button
+        android:id="@+id/expenses_button13"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="기타"
+        app:layout_constraintStart_toStartOf="@+id/expenses_button9"
+        app:layout_constraintEnd_toEndOf="@+id/expenses_button9"
+        app:layout_constraintTop_toBottomOf="@+id/expenses_button9"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

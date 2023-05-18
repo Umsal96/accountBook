@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Main">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/button_sub_navigationview"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_gravity="top"
+        app:itemBackground="@color/black"
+        app:itemIconSize="40dp"
+        app:itemTextColor="@drawable/menu_selector_color"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/button_sub_menu" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/button_statistics"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_gravity="center_horizontal"
+        app:itemBackground="@color/black"
+        app:itemIconSize="40dp"
+        app:itemTextColor="@drawable/menu_selector_color"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/button_statistics"
+        />
+    <FrameLayout
+        android:id="@+id/containers"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="top|bottom"
+        android:background="@android:color/darker_gray">
+    </FrameLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/button_main_navigationview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:itemBackground="@color/black"
+        app:itemIconTint="@drawable/menu_selector_color"
+        app:itemTextColor="@drawable/menu_selector_color"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/button_main_menu" />
+
+</LinearLayout>
