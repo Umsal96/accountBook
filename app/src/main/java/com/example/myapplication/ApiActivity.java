@@ -379,15 +379,15 @@ public class ApiActivity extends AppCompatActivity {
     private void showDatePicker(final Button button){
         DatePickerDialog datePickerDialog = new DatePickerDialog(ApiActivity.this,
                 new DatePickerDialog.OnDateSetListener() {
-            @Override
-            public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
-                String date = year + "-" + (month + 1) + "-" + dayOfMonth;
-                button.setText(date);
-            }
-        },
-        calendar.get(Calendar.YEAR),
-        calendar.get(Calendar.MONTH),
-        calendar.get(Calendar.DAY_OF_MONTH));
+                    @Override
+                    public void onDateSet(DatePicker view, int year, int month, int dayOfMonth) {
+                        String date = year + "-" + (month + 1) + "-" + dayOfMonth;
+                        button.setText(date);
+                    }
+                },
+                calendar.get(Calendar.YEAR),
+                calendar.get(Calendar.MONTH),
+                calendar.get(Calendar.DAY_OF_MONTH));
 
         datePickerDialog.show();
     }
